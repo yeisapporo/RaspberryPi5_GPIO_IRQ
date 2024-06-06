@@ -1,0 +1,21 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "raspberrypi,rp1-gpio";
+
+    fragment@0 {
+        target-path = "/axi/pcie@120000/rp1/gpio@d0000";
+        __overlay__ {
+            pin19 {
+                function = "gpio";
+                pins = "gpio19";
+                bias-pull-up;
+                input-enable;
+                status = "okay";
+                debounce-interval = <100>;
+                interrupts = <19 0x02>;
+            };
+        };
+    };
+};
