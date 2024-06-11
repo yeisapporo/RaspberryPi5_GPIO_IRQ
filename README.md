@@ -1,4 +1,4 @@
-This enables to interrupt in the kernel module due to GPIO pin state changes.
-Event polling is not needed if you use the method.
+This allows interrupts to the kernel module due to GPIO pin state changes.
+Event polling is not required when using the method.
 DeviceTree definition is offered.
-GPIO pin No. 19 is used for an example.
+GPIO pin 19 is used as an example.
